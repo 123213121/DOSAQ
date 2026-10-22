@@ -82,8 +82,8 @@ async def handle_buy_cmd(message: Message):
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [
-                InlineKeyboardButton(text="❌ Отклонить", callback_data="decline_offer"),
-                InlineKeyboardButton(text="✅ Принять", callback_data=f"buy_ok:{deal_id}")
+                InlineKeyboardButton(text="❌ Decline", callback_data="decline_offer"),
+                InlineKeyboardButton(text="✅ Accert", callback_data=f"buy_ok:{deal_id}")
             ]
         ]
     )
